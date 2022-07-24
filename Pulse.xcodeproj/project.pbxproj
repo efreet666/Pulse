@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1D0F50A7979D5A19D0EAA0F /* Pods_Pulse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EB2E7FC16621CFBD75691E9 /* Pods_Pulse.framework */; };
 		F54F6F56288D8511003673C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F6F55288D8511003673C0 /* AppDelegate.swift */; };
 		F54F6F58288D8511003673C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F6F57288D8511003673C0 /* SceneDelegate.swift */; };
-		F54F6F5A288D8511003673C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F6F59288D8511003673C0 /* ViewController.swift */; };
+		F54F6F5A288D8511003673C0 /* GenderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54F6F59288D8511003673C0 /* GenderViewController.swift */; };
 		F54F6F5D288D8511003673C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54F6F5B288D8511003673C0 /* Main.storyboard */; };
 		F54F6F5F288D8516003673C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54F6F5E288D8516003673C0 /* Assets.xcassets */; };
 		F54F6F62288D8516003673C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54F6F60288D8516003673C0 /* LaunchScreen.storyboard */; };
+		F57A0A50288DA008009610AC /* PageNumberTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A4F288DA008009610AC /* PageNumberTitle.swift */; };
+		F57A0A53288DA6CB009610AC /* СhooseGenderLabel .swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A52288DA6CB009610AC /* СhooseGenderLabel .swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68390B534DD43D79AB87BA62 /* Pods-Pulse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse.debug.xcconfig"; path = "Target Support Files/Pods-Pulse/Pods-Pulse.debug.xcconfig"; sourceTree = "<group>"; };
+		6EB2E7FC16621CFBD75691E9 /* Pods_Pulse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Pulse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E4E922A3885BE9EEFA92E35 /* Pods-Pulse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pulse.release.xcconfig"; path = "Target Support Files/Pods-Pulse/Pods-Pulse.release.xcconfig"; sourceTree = "<group>"; };
 		F54F6F52288D8511003673C0 /* Pulse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pulse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54F6F55288D8511003673C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F54F6F57288D8511003673C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F54F6F59288D8511003673C0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F54F6F59288D8511003673C0 /* GenderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderViewController.swift; sourceTree = "<group>"; };
 		F54F6F5C288D8511003673C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F54F6F5E288D8516003673C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F54F6F61288D8516003673C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F54F6F63288D8516003673C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F57A0A4F288DA008009610AC /* PageNumberTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNumberTitle.swift; sourceTree = "<group>"; };
+		F57A0A52288DA6CB009610AC /* СhooseGenderLabel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СhooseGenderLabel .swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B1D0F50A7979D5A19D0EAA0F /* Pods_Pulse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FD3B117E31D475DB31637F8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68390B534DD43D79AB87BA62 /* Pods-Pulse.debug.xcconfig */,
+				7E4E922A3885BE9EEFA92E35 /* Pods-Pulse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D15ABEA708DAE881BFA284B6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6EB2E7FC16621CFBD75691E9 /* Pods_Pulse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F54F6F49288D8511003673C0 = {
 			isa = PBXGroup;
 			children = (
 				F54F6F54288D8511003673C0 /* Pulse */,
 				F54F6F53288D8511003673C0 /* Products */,
+				8FD3B117E31D475DB31637F8 /* Pods */,
+				D15ABEA708DAE881BFA284B6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +84,73 @@
 		F54F6F54288D8511003673C0 /* Pulse */ = {
 			isa = PBXGroup;
 			children = (
+				F54F6F6A288D883A003673C0 /* Application */,
+				F54F6F6C288D8889003673C0 /* Views */,
+				F54F6F69288D8780003673C0 /* Controllers */,
+				F54F6F6B288D885A003673C0 /* Models */,
+				F54F6F5B288D8511003673C0 /* Main.storyboard */,
+				F54F6F6D288D88A6003673C0 /* Resourses */,
+			);
+			path = Pulse;
+			sourceTree = "<group>";
+		};
+		F54F6F69288D8780003673C0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				F54F6F6E288D892C003673C0 /* Onboarding */,
+				F54F6F59288D8511003673C0 /* GenderViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		F54F6F6A288D883A003673C0 /* Application */ = {
+			isa = PBXGroup;
+			children = (
 				F54F6F55288D8511003673C0 /* AppDelegate.swift */,
 				F54F6F57288D8511003673C0 /* SceneDelegate.swift */,
-				F54F6F59288D8511003673C0 /* ViewController.swift */,
-				F54F6F5B288D8511003673C0 /* Main.storyboard */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F54F6F6B288D885A003673C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F54F6F6C288D8889003673C0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F57A0A51288DA662009610AC /* GenderVС */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F54F6F6D288D88A6003673C0 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
 				F54F6F5E288D8516003673C0 /* Assets.xcassets */,
 				F54F6F60288D8516003673C0 /* LaunchScreen.storyboard */,
 				F54F6F63288D8516003673C0 /* Info.plist */,
 			);
-			path = Pulse;
+			path = Resourses;
+			sourceTree = "<group>";
+		};
+		F54F6F6E288D892C003673C0 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		F57A0A51288DA662009610AC /* GenderVС */ = {
+			isa = PBXGroup;
+			children = (
+				F57A0A4F288DA008009610AC /* PageNumberTitle.swift */,
+				F57A0A52288DA6CB009610AC /* СhooseGenderLabel .swift */,
+			);
+			path = "GenderVС";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +160,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F54F6F66288D8516003673C0 /* Build configuration list for PBXNativeTarget "Pulse" */;
 			buildPhases = (
+				0A6EC5687192C2F1E393F23F /* [CP] Check Pods Manifest.lock */,
 				F54F6F4E288D8511003673C0 /* Sources */,
 				F54F6F4F288D8511003673C0 /* Frameworks */,
 				F54F6F50288D8511003673C0 /* Resources */,
+				CA7B05220CB8D913BE5E693F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,12 +221,56 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A6EC5687192C2F1E393F23F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Pulse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA7B05220CB8D913BE5E693F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pulse/Pods-Pulse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Pulse/Pods-Pulse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Pulse/Pods-Pulse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F54F6F4E288D8511003673C0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F54F6F5A288D8511003673C0 /* ViewController.swift in Sources */,
+				F57A0A50288DA008009610AC /* PageNumberTitle.swift in Sources */,
+				F57A0A53288DA6CB009610AC /* СhooseGenderLabel .swift in Sources */,
+				F54F6F5A288D8511003673C0 /* GenderViewController.swift in Sources */,
 				F54F6F56288D8511003673C0 /* AppDelegate.swift in Sources */,
 				F54F6F58288D8511003673C0 /* SceneDelegate.swift in Sources */,
 			);
@@ -284,13 +416,14 @@
 		};
 		F54F6F67288D8516003673C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68390B534DD43D79AB87BA62 /* Pods-Pulse.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pulse/Info.plist;
+				INFOPLIST_FILE = Pulse/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -311,13 +444,14 @@
 		};
 		F54F6F68288D8516003673C0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E4E922A3885BE9EEFA92E35 /* Pods-Pulse.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Pulse/Info.plist;
+				INFOPLIST_FILE = Pulse/Resourses/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
