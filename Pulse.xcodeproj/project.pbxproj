@@ -16,6 +16,7 @@
 		F54F6F62288D8516003673C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54F6F60288D8516003673C0 /* LaunchScreen.storyboard */; };
 		F57A0A50288DA008009610AC /* PageNumberTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A4F288DA008009610AC /* PageNumberTitle.swift */; };
 		F57A0A53288DA6CB009610AC /* СhooseGenderLabel .swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A52288DA6CB009610AC /* СhooseGenderLabel .swift */; };
+		F57A0A55288DAA08009610AC /* GenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A54288DAA08009610AC /* GenderButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		F54F6F63288D8516003673C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F57A0A4F288DA008009610AC /* PageNumberTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNumberTitle.swift; sourceTree = "<group>"; };
 		F57A0A52288DA6CB009610AC /* СhooseGenderLabel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СhooseGenderLabel .swift"; sourceTree = "<group>"; };
+		F57A0A54288DAA08009610AC /* GenderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			children = (
 				F57A0A4F288DA008009610AC /* PageNumberTitle.swift */,
 				F57A0A52288DA6CB009610AC /* СhooseGenderLabel .swift */,
+				F57A0A54288DAA08009610AC /* GenderButton.swift */,
 			);
 			path = "GenderVС";
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 			files = (
 				F57A0A50288DA008009610AC /* PageNumberTitle.swift in Sources */,
 				F57A0A53288DA6CB009610AC /* СhooseGenderLabel .swift in Sources */,
+				F57A0A55288DAA08009610AC /* GenderButton.swift in Sources */,
 				F54F6F5A288D8511003673C0 /* GenderViewController.swift in Sources */,
 				F54F6F56288D8511003673C0 /* AppDelegate.swift in Sources */,
 				F54F6F58288D8511003673C0 /* SceneDelegate.swift in Sources */,

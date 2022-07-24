@@ -24,8 +24,7 @@ class СhooseGenderLabel : UILabel {
         font = UIFont(name: "SF Pro Display", size: 24)
         text = "What’s your gender?"
         textColor = UIColor.black
-        adjustsFontSizeToFitWidth = true
-    
-
+        textAlignment = .center
+        font = UIFont.boldSystemFont(ofSize: 24)
     }
 }
