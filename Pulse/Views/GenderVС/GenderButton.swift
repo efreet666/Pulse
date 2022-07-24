@@ -8,9 +8,6 @@
 import Foundation
 import UIKit
 
-
-public var ButtonIsTapped = false
-
 class GenderButton : UIButton {
     
     var delegate: buttonTappedDelegate?

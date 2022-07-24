@@ -13,20 +13,19 @@ class PageNumberTitle: UILabel {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        configure()
+        configure(numberOfSteps: "")
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func configure() {
+    func configure(numberOfSteps: String) {
         font = UIFont(name: "SF Pro Display", size: 15)
-        text = "Step 1 of 9"
         textColor = UIColor.black
         adjustsFontSizeToFitWidth = true
         func setColoredLabel() {
-            let string = NSMutableAttributedString(string: "Step 1 of 9")
+            let string = NSMutableAttributedString(string: "\(numberOfSteps)")
             string.setColorForText("Step 1", with: #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1))
             string.setColorForText("of 9", with: #colorLiteral(red: 70/255, green: 72/255, blue: 76/255, alpha: 1))
             attributedText = string

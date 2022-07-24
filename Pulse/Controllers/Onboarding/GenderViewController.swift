@@ -15,7 +15,7 @@ protocol buttonTappedDelegate {
 class GenderViewController: UIViewController {
 
     private let pageNumberTitle = PageNumberTitle()
-    private let chooseGenderLabel = СhooseGenderLabel()
+    private let pageTextLabel = PageTextLabel()
     
     private let maleGenderButton = GenderButton()
     private let femaleGenderButton = GenderButton()
@@ -34,8 +34,10 @@ class GenderViewController: UIViewController {
     }
 
     private func setupViews() {
+        pageNumberTitle.configure(numberOfSteps: "Step 1 of 9")
+        pageTextLabel.text = "What’s your gender?"
         view.addSubview(pageNumberTitle)
-        view.addSubview(chooseGenderLabel)
+        view.addSubview(pageTextLabel)
         
         maleGenderButton.configure(text: "Male")
         femaleGenderButton.configure(text: "Female")
@@ -62,7 +64,7 @@ extension GenderViewController {
             make.leading.equalToSuperview().inset(151)
         }
         
-        chooseGenderLabel.snp.makeConstraints { make in
+        pageTextLabel.snp.makeConstraints { make in
             make.width.equalTo(226)
             make.height.equalTo(29)
             make.top.equalToSuperview().inset(113)
