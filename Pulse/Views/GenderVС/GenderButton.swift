@@ -28,11 +28,13 @@ class GenderButton : UIButton {
     
     func configure(text: String) {
         setTitle("\(text)", for: .normal)
-        backgroundColor = UIColor(red: 230/255, green: 230/255, blue: 230/255, alpha: 1)
+        backgroundColor = UIColor(red: 247/255, green: 249/255, blue: 252/255, alpha: 1)
         setTitleColor(.black, for: .normal)
         layer.cornerRadius = 18
         contentHorizontalAlignment = .left
         titleEdgeInsets.left = 16
+        layer.borderWidth = 1
+        layer.borderColor = CGColor.init(srgbRed: 230/255, green: 230/255, blue: 230/255, alpha: 1)
         addTarget(self, action: #selector(buttonTapped(button:)), for: .touchUpInside)
     }
     
