@@ -17,6 +17,7 @@
 		F57A0A50288DA008009610AC /* PageNumberTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A4F288DA008009610AC /* PageNumberTitle.swift */; };
 		F57A0A53288DA6CB009610AC /* СhooseGenderLabel .swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A52288DA6CB009610AC /* СhooseGenderLabel .swift */; };
 		F57A0A55288DAA08009610AC /* GenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A54288DAA08009610AC /* GenderButton.swift */; };
+		F57A0A57288DD61C009610AC /* HeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A56288DD61C009610AC /* HeightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		F57A0A4F288DA008009610AC /* PageNumberTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageNumberTitle.swift; sourceTree = "<group>"; };
 		F57A0A52288DA6CB009610AC /* СhooseGenderLabel .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "СhooseGenderLabel .swift"; sourceTree = "<group>"; };
 		F57A0A54288DAA08009610AC /* GenderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderButton.swift; sourceTree = "<group>"; };
+		F57A0A56288DD61C009610AC /* HeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +102,6 @@
 			isa = PBXGroup;
 			children = (
 				F54F6F6E288D892C003673C0 /* Onboarding */,
-				F54F6F59288D8511003673C0 /* GenderViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -142,6 +143,8 @@
 		F54F6F6E288D892C003673C0 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				F54F6F59288D8511003673C0 /* GenderViewController.swift */,
+				F57A0A56288DD61C009610AC /* HeightViewController.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -276,6 +279,7 @@
 				F57A0A55288DAA08009610AC /* GenderButton.swift in Sources */,
 				F54F6F5A288D8511003673C0 /* GenderViewController.swift in Sources */,
 				F54F6F56288D8511003673C0 /* AppDelegate.swift in Sources */,
+				F57A0A57288DD61C009610AC /* HeightViewController.swift in Sources */,
 				F54F6F58288D8511003673C0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

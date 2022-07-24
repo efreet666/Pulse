@@ -37,6 +37,12 @@ class GenderViewController: UIViewController {
         view.addSubview(femaleGenderButton)
         view.addSubview(nonBinaryGenderButton)
     }
+    
+    func push() {
+        let storyB = UIStoryboard(name: "Main", bundle: nil)
+                guard let vc = storyB.instantiateViewController(identifier: "HeightViewController") as? HeightViewController else { return }
+                self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
 
@@ -70,7 +76,7 @@ extension GenderViewController {
         }
         
         nonBinaryGenderButton.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(391)
+            make.top.equalToSuperview().inset(311)
             make.leading.trailing.equalToSuperview().inset(16)
             make.height.equalTo(68)
         }
