@@ -13,7 +13,7 @@ public var ButtonIsTapped = false
 
 class GenderButton : UIButton {
     
-   
+    var delegate: buttonTappedDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -40,8 +40,8 @@ class GenderButton : UIButton {
 
         backgroundColor = UIColor(red: 255/255, green: 95/255, blue: 114/255, alpha: 1)
         setTitleColor(.white, for: .normal)
-        
-        
+            self.delegate?.pushVC()
+
     }
 }
 

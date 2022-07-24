@@ -8,6 +8,10 @@
 import UIKit
 import SnapKit
 
+protocol buttonTappedDelegate {
+    func pushVC()
+}
+
 class GenderViewController: UIViewController {
 
     private let pageNumberTitle = PageNumberTitle()
@@ -17,12 +21,16 @@ class GenderViewController: UIViewController {
     private let femaleGenderButton = GenderButton()
     private let nonBinaryGenderButton = GenderButton()
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         setupViews()
         setContraint()
         
+    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        setupViews()
+        setContraint()
     }
 
     private func setupViews() {
@@ -33,17 +41,15 @@ class GenderViewController: UIViewController {
         femaleGenderButton.configure(text: "Female")
         nonBinaryGenderButton.configure(text: "Non-binary")
         
+        maleGenderButton.delegate = self
+        femaleGenderButton.delegate = self
+        nonBinaryGenderButton.delegate = self
+        
         view.addSubview(maleGenderButton)
         view.addSubview(femaleGenderButton)
         view.addSubview(nonBinaryGenderButton)
     }
     
-    func push() {
-        let storyB = UIStoryboard(name: "Main", bundle: nil)
-                guard let vc = storyB.instantiateViewController(identifier: "HeightViewController") as? HeightViewController else { return }
-                self.navigationController?.pushViewController(vc, animated: true)
-    }
-
 }
 
 extension GenderViewController {
@@ -76,10 +82,18 @@ extension GenderViewController {
         }
         
         nonBinaryGenderButton.snp.makeConstraints { make in
-            make.top.equalToSuperview().inset(311)
+            make.top.equalToSuperview().inset(391)
             make.leading.trailing.equalToSuperview().inset(16)
             make.height.equalTo(68)
         }
         
+    }
+}
+
+extension GenderViewController: buttonTappedDelegate {
+    func pushVC() {
+        let storyB = UIStoryboard(name: "Main", bundle: nil)
+                guard let vc = storyB.instantiateViewController(identifier: "HeightViewController") as? HeightViewController else { return }
+                self.navigationController?.pushViewController(vc, animated: true)
     }
 }
