@@ -116,14 +116,14 @@ extension HeightViewController {
             make.height.equalTo(80)
         }
         
-        customLabelToTextField1.snp.makeConstraints { make in
-            make.leading.equalToSuperview().inset(158)
+        customLabelToTextField2.snp.makeConstraints { make in
+            make.leading.equalToSuperview().inset(137)
             make.top.equalToSuperview().inset(266)
             make.width.equalTo(70)
             make.height.equalTo(80)
         }
         
-        customLabelToTextField1.snp.makeConstraints { make in
+        customLabelToTextField3.snp.makeConstraints { make in
             make.leading.equalToSuperview().inset(213)
             make.top.equalToSuperview().inset(266)
             make.width.equalTo(70)
