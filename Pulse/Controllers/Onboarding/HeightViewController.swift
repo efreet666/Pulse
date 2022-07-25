@@ -10,6 +10,11 @@ import UIKit
 protocol backButtonDelegate {
     func popVC()
 }
+
+protocol updateCustomTextFieldDelegate {
+    func updateTFLabel(array: [Character])
+}
+
 class HeightViewController: UIViewController {
 
     private let backButton = BackButton()
@@ -23,6 +28,10 @@ class HeightViewController: UIViewController {
     private var customLabelToTextField1 = customLabelToTextField()
     private var customLabelToTextField2 = customLabelToTextField()
     private var customLabelToTextField3 = customLabelToTextField()
+    
+    public var labelTextArray: [String] = [""]
+    
+    public var CharacterArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +61,13 @@ class HeightViewController: UIViewController {
         continueButton.configure(title: "CONTINUE")
         view.addSubview(continueButton)
         
+        customTextField.delegate = self
         view.addSubview(customTextField)
+        
+        
+        customLabelToTextField1.configure(character: "")
+        customLabelToTextField2.configure(character: "")
+        customLabelToTextField3.configure(character: "")
         
         view.addSubview(customLabelToTextField1)
         view.addSubview(customLabelToTextField2)
@@ -136,5 +151,98 @@ extension HeightViewController {
 extension HeightViewController: backButtonDelegate {
     func popVC() {
         self.navigationController?.popToRootViewController(animated: true)
+    }
+}
+
+extension HeightViewController: UITextFieldDelegate {
+//    func updateTFLabel(array: [Character]) {
+//        labelTextArray = array
+//    }
+    
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        print("aaa\(textField.text)")
+        
+        let inputText = textField.text
+       
+        if inputText?.count != 4 {
+            if inputText?.count == 1 {
+                if let character1 = inputText?.character(at: 0) {
+                    print(character1)
+                    CharacterArray.append(String(character1))
+                    print("&&")
+                }
+            }
+            
+            if inputText?.count == 2 {
+                if let character2 = inputText?.character(at: 1) {
+                    //print(character2)
+                    CharacterArray.append(String(character2))
+                }
+            }
+            if inputText?.count == 3 {
+                if let character3 = inputText?.character(at: 2) {
+                    print(character3)
+                    CharacterArray.append(String(character3))
+                    
+                }
+            }
+        } else {
+            labelTextArray.removeAll(keepingCapacity: true)
+            textField.text = ""
+            print("Жесть")
+            
+        }
+        
+        
+
+        
+        labelTextArray = CharacterArray
+        print(labelTextArray)
+        
+        switch labelTextArray.count {
+        case 0:
+            customLabelToTextField1.configure(character: "")
+            customLabelToTextField2.configure(character: "")
+            customLabelToTextField3.configure(character: "")
+        case 1:
+            customLabelToTextField1.configure(character: labelTextArray[0])
+            print("!!!")
+        case 2:
+            customLabelToTextField1.configure(character: String(labelTextArray[0]))
+            customLabelToTextField2.configure(character: String(labelTextArray[1]))
+        case 3:
+            customLabelToTextField1.configure(character: String(labelTextArray[0]))
+            customLabelToTextField2.configure(character: String(labelTextArray[1]))
+            customLabelToTextField3.configure(character: String(labelTextArray[2]))
+            labelTextArray = []
+        case 4:
+            labelTextArray = []
+            customLabelToTextField1.configure(character: "")
+            customLabelToTextField2.configure(character: "")
+            customLabelToTextField3.configure(character: "")
+        default:
+            customLabelToTextField1.configure(character: "")
+            customLabelToTextField2.configure(character: "")
+            customLabelToTextField3.configure(character: "")
+            
+        }
+        
+        return true
+    }
+}
+
+extension String {
+ 
+    func index(at position: Int, from start: Index? = nil) -> Index? {
+        let startingIndex = start ?? startIndex
+        return index(startingIndex, offsetBy: position, limitedBy: endIndex)
+    }
+ 
+    func character(at position: Int) -> Character? {
+        guard position >= 0, let indexPosition = index(at: position) else {
+            return nil
+        }
+        return self[indexPosition]
     }
 }
