@@ -10,8 +10,6 @@ import UIKit
 
 class CustomTextField: UITextField {
     
-    var delegateText = UITextFieldDelegate?.self
-    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
@@ -23,18 +21,9 @@ class CustomTextField: UITextField {
     }
     
     func configure() {
-        
         textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
-        addTarget(self, action: #selector(characterAdded(textField:)), for: .editingChanged)
     }
     
-    
-    
-    
-    @objc func characterAdded(textField: UITextField){
-       
-        
-    }
 }
 
 
