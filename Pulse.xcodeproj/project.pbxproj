@@ -19,6 +19,7 @@
 		F57A0A55288DAA08009610AC /* GenderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A54288DAA08009610AC /* GenderButton.swift */; };
 		F57A0A57288DD61C009610AC /* HeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A56288DD61C009610AC /* HeightViewController.swift */; };
 		F57A0A5A288DE2B2009610AC /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A59288DE2B2009610AC /* BackButton.swift */; };
+		F57A0A5C288EAE5B009610AC /* SegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = F57A0A5B288EAE5B009610AC /* SegmentControl.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		F57A0A54288DAA08009610AC /* GenderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenderButton.swift; sourceTree = "<group>"; };
 		F57A0A56288DD61C009610AC /* HeightViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeightViewController.swift; sourceTree = "<group>"; };
 		F57A0A59288DE2B2009610AC /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		F57A0A5B288EAE5B009610AC /* SegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentControl.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +168,7 @@
 		F57A0A58288DDE19009610AC /* HeightVC */ = {
 			isa = PBXGroup;
 			children = (
+				F57A0A5B288EAE5B009610AC /* SegmentControl.swift */,
 			);
 			path = HeightVC;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				F57A0A53288DA6CB009610AC /* PageTextLabel.swift in Sources */,
 				F57A0A55288DAA08009610AC /* GenderButton.swift in Sources */,
 				F54F6F5A288D8511003673C0 /* GenderViewController.swift in Sources */,
+				F57A0A5C288EAE5B009610AC /* SegmentControl.swift in Sources */,
 				F54F6F56288D8511003673C0 /* AppDelegate.swift in Sources */,
 				F57A0A57288DD61C009610AC /* HeightViewController.swift in Sources */,
 				F54F6F58288D8511003673C0 /* SceneDelegate.swift in Sources */,
