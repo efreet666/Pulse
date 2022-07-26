@@ -10,7 +10,7 @@ import UIKit
 
 class ContinueButton: UIButton {
     
-   // var delegate: backButtonDelegate?
+    var delegate: continueButtonDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -32,6 +32,6 @@ class ContinueButton: UIButton {
     
     @objc func buttonTapped(button: UIButton){
         
-//        self.delegate?.popVC()
+        self.delegate?.pushVC()
     }
 }

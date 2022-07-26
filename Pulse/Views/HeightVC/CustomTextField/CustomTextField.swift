@@ -22,6 +22,8 @@ class CustomTextField: UITextField {
     
     func configure() {
         textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
+        becomeFirstResponder()
+        keyboardType = .decimalPad
     }
     
 }

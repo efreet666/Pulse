@@ -11,6 +11,10 @@ protocol backButtonDelegate {
     func popVC()
 }
 
+protocol continueButtonDelegate {
+    func pushVC()
+}
+
 class HeightViewController: UIViewController {
     
     private let backButton = BackButton()
@@ -55,11 +59,13 @@ class HeightViewController: UIViewController {
         view.addSubview(segmentControl)
         
         continueButton.configure(title: "CONTINUE")
+        continueButton.delegate = self
+        continueButton.alpha = 0
+        continueButton.isEnabled = false
         view.addSubview(continueButton)
         
         customTextField.delegate = self
         view.addSubview(customTextField)
-        
         
         customLabelToTextField1.configure(character: "")
         customLabelToTextField2.configure(character: "")
@@ -69,8 +75,6 @@ class HeightViewController: UIViewController {
         view.addSubview(customLabelToTextField2)
         view.addSubview(customLabelToTextField3)
     }
-    
-    
     
 }
 
@@ -120,6 +124,7 @@ extension HeightViewController {
         }
         
         //MARK: - customLabelToTextFields
+        
         customLabelToTextField1.snp.makeConstraints { make in
             make.leading.equalToSuperview().inset(61)
             make.top.equalToSuperview().inset(266)
@@ -173,11 +178,19 @@ extension HeightViewController: UITextFieldDelegate {
                 if let character3 = inputText?.character(at: 2) {
                     print(character3)
                     labelTextArray.append(String(character3))
+                    
+                    continueButton.isEnabled = true
+                    self.continueButton.alpha = 1
+                    
                 }
             }
         } else {
             labelTextArray = []
             textField.text = ""
+            
+                self.continueButton.alpha = 0
+                self.continueButton.isEnabled = false
+            
         }
         
         switch labelTextArray.count {
@@ -203,7 +216,6 @@ extension HeightViewController: UITextFieldDelegate {
     }
 }
 
-
 extension String {
     
     func index(at position: Int, from start: Index? = nil) -> Index? {
@@ -217,4 +229,13 @@ extension String {
         }
         return self[indexPosition]
     }
+}
+
+extension HeightViewController: continueButtonDelegate {
+        func pushVC() {
+            let storyB = UIStoryboard(name: "Main", bundle: nil)
+                    guard let vc = storyB.instantiateViewController(identifier: "WeightViewController") as? WeightViewController else { return }
+                    self.navigationController?.pushViewController(vc, animated: true)
+        }
+
 }
