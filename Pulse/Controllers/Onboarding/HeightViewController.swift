@@ -23,15 +23,14 @@ class HeightViewController: UIViewController {
     private var segmentControl = UISegmentedControl()
     private var continueButton = ContinueButton()
     
+    // MARK: - Custom textField
     private var customTextField = CustomTextField()
-    
     private var customLabelToTextField1 = customLabelToTextField()
     private var customLabelToTextField2 = customLabelToTextField()
     private var customLabelToTextField3 = customLabelToTextField()
+    private var unitLabel = UnitLabel()
     
     public var labelTextArray: [String] = []
-    
-    public var CharacterArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +73,9 @@ class HeightViewController: UIViewController {
         view.addSubview(customLabelToTextField1)
         view.addSubview(customLabelToTextField2)
         view.addSubview(customLabelToTextField3)
+        
+        unitLabel.configure(pageText: "cm")
+        view.addSubview(unitLabel)
     }
     
 }
@@ -146,6 +148,12 @@ extension HeightViewController {
             make.height.equalTo(80)
         }
         
+        unitLabel.snp.makeConstraints { make in
+            make.width.equalTo(25)
+            make.height.equalTo(20)
+            make.top.equalToSuperview().inset(330)
+            make.leading.equalToSuperview().inset(289)
+        }
     }
 }
 

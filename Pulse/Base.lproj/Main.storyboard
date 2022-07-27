@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dK0-fB-mGj">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wlg-oa-Qdn">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
@@ -55,10 +55,10 @@
             </objects>
             <point key="canvasLocation" x="2503.1999999999998" y="69.458128078817737"/>
         </scene>
-        <!--View Controller-->
+        <!--Allow Notification View Controller-->
         <scene sceneID="udE-pd-zpK">
             <objects>
-                <viewController id="ogB-IH-qwh" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AllowNotificationViewController" id="ogB-IH-qwh" customClass="AllowNotificationViewController" customModule="Pulse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Jq-0x-vV8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,7 +70,7 @@
             </objects>
             <point key="canvasLocation" x="3269.5999999999999" y="69.458128078817737"/>
         </scene>
-        <!--Item 2-->
+        <!--Profile-->
         <scene sceneID="ae2-CL-4oH">
             <objects>
                 <viewController id="Tke-Fa-XLu" sceneMemberID="viewController">
@@ -80,32 +80,32 @@
                         <viewLayoutGuide key="safeArea" id="FHl-SA-d4p"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="xm3-aE-a0Q"/>
+                    <tabBarItem key="tabBarItem" title="Profile" image="person.circle.fill" catalog="system" id="xm3-aE-a0Q"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CwK-cE-PmH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4972" y="373.89162561576359"/>
         </scene>
-        <!--Item 1-->
+        <!--Health-->
         <scene sceneID="zCU-bY-RBl">
             <objects>
-                <viewController id="IbW-Me-Y61" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainViewController" id="IbW-Me-Y61" customClass="MainViewController" customModule="Pulse" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jNo-FZ-Hct">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="zmt-Yv-LI0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="daF-Sf-edB"/>
+                    <tabBarItem key="tabBarItem" title="Health" image="heart.fill" catalog="system" id="daF-Sf-edB"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLl-hU-Jmc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4972" y="-294.0886699507389"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar View Controller-->
         <scene sceneID="TpC-1L-Qho">
             <objects>
-                <tabBarController id="Wlg-oa-Qdn" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" id="Wlg-oa-Qdn" customClass="TabBarViewController" customModule="Pulse" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nFQ-1k-J4Z">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -140,6 +140,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="heart.fill" catalog="system" width="128" height="109"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

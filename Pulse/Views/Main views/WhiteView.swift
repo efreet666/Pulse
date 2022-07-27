@@ -1,14 +1,14 @@
 //
-//  CustomTextField.swift
+//  whiteView.swift
 //  Pulse
 //
-//  Created by Влад Бокин on 25.07.2022.
+//  Created by Влад Бокин on 26.07.2022.
 //
 
 import Foundation
 import UIKit
 
-class CustomTextField: UITextField {
+class WhiteView: UIView{
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -21,12 +21,8 @@ class CustomTextField: UITextField {
     }
     
     func configure() {
-        textColor = UIColor(red: 1, green: 1, blue: 1, alpha: 0)
-        becomeFirstResponder()
-        keyboardType = .decimalPad
+        layer.cornerRadius = 23
+        backgroundColor = UIColor(red: 247/255, green: 249/255, blue: 252/255, alpha: 1)
+        
     }
-    
 }
-
-
- 
