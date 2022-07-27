@@ -1,21 +1,23 @@
 //
-//  customElipseView.swift
+//  LoadElipse.swift
 //  Pulse
 //
 //  Created by Влад Бокин on 27.07.2022.
-//z
+//
+
 import Foundation
 import UIKit
 
-class Ring: UIView {
+class LoadElipse: UIView {
     
     override func draw(_ rect: CGRect) {
         drawRingFittingInsideView()
     }
     
-    internal func drawRingFittingInsideView() -> () {
+    private func drawRingFittingInsideView() -> () {
         let halfSize:CGFloat = min( bounds.size.width/2, bounds.size.height/2)
-        let desiredLineWidth:CGFloat = 55 // your desired value
+        
+        let desiredLineWidth: CGFloat = 6
             
         let circlePath = UIBezierPath(
                 arcCenter: CGPoint(x:halfSize,y:halfSize),

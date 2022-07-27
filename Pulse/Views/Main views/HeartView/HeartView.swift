@@ -24,7 +24,11 @@ class HeartView: UIView {
     let heartSubImage = UIImageView()
     let heartSetImage2 = UIImageView()
     let imageCircle = UIImageView()
-    let elipse = Ring()
+    let elipse = CustomElipseView()
+    let loadElpise = LoadElipse()
+    let heartButton = HeartButton()
+    let buttonLabel = ButtonLabel()
+    
     
     func configure() {
         
@@ -61,7 +65,29 @@ class HeartView: UIView {
             make.top.equalToSuperview().inset(0)
             make.bottom.equalToSuperview().inset(0)
         }
+        
+        addSubview(loadElpise)
+        loadElpise.snp.makeConstraints { make in
+            make.trailing.leading.equalToSuperview().inset(32)
+            make.top.equalToSuperview().inset(32)
+            make.bottom.equalToSuperview().inset(32)
+        }
 
+        addSubview(heartButton)
+        heartButton.snp.makeConstraints { make in
+            make.trailing.leading.bottom.equalToSuperview().inset(80)
+            make.top.equalToSuperview().inset(104)
+        }
+        
+        addSubview(buttonLabel)
+        buttonLabel.snp.makeConstraints { make in
+            make.trailing.leading.equalToSuperview().inset(139)
+            make.top.equalToSuperview().inset(173)
+            make.bottom.equalToSuperview().inset(167)
+            make.height.equalTo(20)
+            //make.width.equalTo(80)
+        }
+        
     }
   
         
