@@ -23,6 +23,7 @@
 		F51F4E192891D1B900C4081E /* LoadElipse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F4E182891D1B900C4081E /* LoadElipse.swift */; };
 		F51F4E1C2891D84D00C4081E /* HeartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F4E1B2891D84D00C4081E /* HeartButton.swift */; };
 		F51F4E1F2891D9FA00C4081E /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F4E1E2891D9FA00C4081E /* ButtonLabel.swift */; };
+		F51F4E212891DC4100C4081E /* ButtonSubLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F4E202891DC4100C4081E /* ButtonSubLabel.swift */; };
 		F53908ED288EF16F00E85E88 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53908EC288EF16F00E85E88 /* ContinueButton.swift */; };
 		F53908EF288EF38100E85E88 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53908EE288EF38100E85E88 /* CustomTextField.swift */; };
 		F53908F1288EF65900E85E88 /* customLabelToTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53908F0288EF65900E85E88 /* customLabelToTextField.swift */; };
@@ -59,6 +60,7 @@
 		F51F4E182891D1B900C4081E /* LoadElipse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadElipse.swift; sourceTree = "<group>"; };
 		F51F4E1B2891D84D00C4081E /* HeartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
 		F51F4E1E2891D9FA00C4081E /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
+		F51F4E202891DC4100C4081E /* ButtonSubLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSubLabel.swift; sourceTree = "<group>"; };
 		F53908EC288EF16F00E85E88 /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		F53908EE288EF38100E85E88 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F53908F0288EF65900E85E88 /* customLabelToTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLabelToTextField.swift; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 			children = (
 				F51F4E1B2891D84D00C4081E /* HeartButton.swift */,
 				F51F4E1E2891D9FA00C4081E /* ButtonLabel.swift */,
+				F51F4E202891DC4100C4081E /* ButtonSubLabel.swift */,
 			);
 			path = HeartButton;
 			sourceTree = "<group>";
@@ -415,6 +418,7 @@
 				F50FD25D288FFCBF00D6C421 /* MainViewController.swift in Sources */,
 				F57A0A5C288EAE5B009610AC /* SegmentControl.swift in Sources */,
 				F54F6F56288D8511003673C0 /* AppDelegate.swift in Sources */,
+				F51F4E212891DC4100C4081E /* ButtonSubLabel.swift in Sources */,
 				F50FD265289002DF00D6C421 /* SettingsButton.swift in Sources */,
 				F51F4E152891C40A00C4081E /* HeartView.swift in Sources */,
 				F57A0A57288DD61C009610AC /* HeightViewController.swift in Sources */,

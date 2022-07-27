@@ -1,5 +1,5 @@
 //
-//  ButtonLabel.swift
+//  ButtonSubLabel.swift
 //  Pulse
 //
 //  Created by Влад Бокин on 27.07.2022.
@@ -8,8 +8,7 @@
 import Foundation
 import UIKit
 
-class ButtonLabel: UILabel {
-    
+class ButtonSubLabel: UILabel {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -22,10 +21,10 @@ class ButtonLabel: UILabel {
     }
     
     func configure() {
-        text = "MEASURE"
+        text = "Tap to start measure"
         textAlignment = .center
-        font = UIFont(name: "SF Pro Display", size: 17)
+        font = UIFont(name: "SF Pro Display", size: 13)
         textColor = UIColor.white
-        font = UIFont.boldSystemFont(ofSize: 17)
+        font = UIFont.systemFont(ofSize: 15)
     }
 }

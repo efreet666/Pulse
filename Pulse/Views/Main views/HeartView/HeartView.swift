@@ -28,7 +28,7 @@ class HeartView: UIView {
     let loadElpise = LoadElipse()
     let heartButton = HeartButton()
     let buttonLabel = ButtonLabel()
-    
+    let buttonSubLabel = ButtonSubLabel()
     
     func configure() {
         
@@ -85,7 +85,14 @@ class HeartView: UIView {
             make.top.equalToSuperview().inset(173)
             make.bottom.equalToSuperview().inset(167)
             make.height.equalTo(20)
-            //make.width.equalTo(80)
+        }
+        
+        addSubview(buttonSubLabel)
+        buttonSubLabel.snp.makeConstraints { make in
+            make.trailing.leading.equalToSuperview().inset(110)
+            make.top.equalToSuperview().inset(199)
+            make.bottom.equalToSuperview().inset(143)
+            make.height.equalTo(20)
         }
         
     }
