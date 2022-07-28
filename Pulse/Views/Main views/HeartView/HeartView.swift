@@ -29,6 +29,7 @@ class HeartView: UIView {
     let heartButton = HeartButton()
     let buttonLabel = ButtonLabel()
     let buttonSubLabel = ButtonSubLabel()
+    let shapeView = ShapeView()
     
     func configure() {
         
@@ -94,6 +95,11 @@ class HeartView: UIView {
             make.bottom.equalToSuperview().inset(143)
             make.height.equalTo(20)
         }
+        
+        addSubview(shapeView)
+//        shapeView.snp.makeConstraints { make in
+//            make.trailing.leading.top.bottom.equalToSuperview()
+//        }
         
     }
   

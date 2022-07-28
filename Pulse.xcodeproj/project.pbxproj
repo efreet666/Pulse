@@ -24,6 +24,7 @@
 		F51F4E1C2891D84D00C4081E /* HeartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F4E1B2891D84D00C4081E /* HeartButton.swift */; };
 		F51F4E1F2891D9FA00C4081E /* ButtonLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F4E1E2891D9FA00C4081E /* ButtonLabel.swift */; };
 		F51F4E212891DC4100C4081E /* ButtonSubLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F4E202891DC4100C4081E /* ButtonSubLabel.swift */; };
+		F51F4E232891DEEF00C4081E /* ShapeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51F4E222891DEEF00C4081E /* ShapeView.swift */; };
 		F53908ED288EF16F00E85E88 /* ContinueButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53908EC288EF16F00E85E88 /* ContinueButton.swift */; };
 		F53908EF288EF38100E85E88 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53908EE288EF38100E85E88 /* CustomTextField.swift */; };
 		F53908F1288EF65900E85E88 /* customLabelToTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53908F0288EF65900E85E88 /* customLabelToTextField.swift */; };
@@ -61,6 +62,7 @@
 		F51F4E1B2891D84D00C4081E /* HeartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartButton.swift; sourceTree = "<group>"; };
 		F51F4E1E2891D9FA00C4081E /* ButtonLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonLabel.swift; sourceTree = "<group>"; };
 		F51F4E202891DC4100C4081E /* ButtonSubLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonSubLabel.swift; sourceTree = "<group>"; };
+		F51F4E222891DEEF00C4081E /* ShapeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeView.swift; sourceTree = "<group>"; };
 		F53908EC288EF16F00E85E88 /* ContinueButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContinueButton.swift; sourceTree = "<group>"; };
 		F53908EE288EF38100E85E88 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		F53908F0288EF65900E85E88 /* customLabelToTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customLabelToTextField.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				F51F4E142891C40A00C4081E /* HeartView.swift */,
 				F51F4E162891C8AE00C4081E /* CustomElipseView.swift */,
 				F51F4E182891D1B900C4081E /* LoadElipse.swift */,
+				F51F4E222891DEEF00C4081E /* ShapeView.swift */,
 				F51F4E1D2891D9B200C4081E /* HeartButton */,
 			);
 			path = HeartView;
@@ -417,6 +420,7 @@
 				F50FD263289001AB00D6C421 /* PageLabel.swift in Sources */,
 				F50FD25D288FFCBF00D6C421 /* MainViewController.swift in Sources */,
 				F57A0A5C288EAE5B009610AC /* SegmentControl.swift in Sources */,
+				F51F4E232891DEEF00C4081E /* ShapeView.swift in Sources */,
 				F54F6F56288D8511003673C0 /* AppDelegate.swift in Sources */,
 				F51F4E212891DC4100C4081E /* ButtonSubLabel.swift in Sources */,
 				F50FD265289002DF00D6C421 /* SettingsButton.swift in Sources */,
