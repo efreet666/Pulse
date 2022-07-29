@@ -19,7 +19,7 @@ class MainViewController: UIViewController {
     private let healthButton3 =  HealthButton()
     private let heartWhite = WhiteView()
     private let heartView = HeartView()
-    
+    private let whiteView2 = WhiteView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,7 +30,7 @@ class MainViewController: UIViewController {
     
     private func setupViews() {
         view.addSubview(scrollView)
-        view.addSubview(contentView)
+        scrollView.addSubview(contentView)
         view.addSubview(pageLabel)
         view.addSubview(settingsButton)
         view.addSubview(whiteView)
@@ -46,6 +46,9 @@ class MainViewController: UIViewController {
         
         view.addSubview(heartWhite)
         view.addSubview(heartView)
+        
+        //
+        view.addSubview(whiteView2)
     }
    
     private func setContraint() {
@@ -112,6 +115,12 @@ class MainViewController: UIViewController {
             make.top.equalToSuperview().inset(225)
         }
         
+        whiteView2.snp.makeConstraints { make in
+            make.top.equalToSuperview().inset(601)
+            make.trailing.leading.equalToSuperview().inset(8)
+            make.width.equalTo(359)
+            make.height.equalTo(360)
+        }
     }
 
 }
